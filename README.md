@@ -19,6 +19,8 @@ The Google Sheet used by the extension should be structured as follows:
 - **Song Start Time**: Timestamp where the song begins in the movie (in seconds).
 - **Song End Time**: Timestamp where the song ends in the movie (in seconds).
 
+`https://docs.google.com/spreadsheets/d/1wWKZElRlOp7wphuTUvKc6ywAjYfmx0-1VOIWPtrk82k/edit?gid=0#gid=0`
+
 Example:
 
 | Movie ID | Song Start Time (Seconds) | Song End Time (Seconds) |
