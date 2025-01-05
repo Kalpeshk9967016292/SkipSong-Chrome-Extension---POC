@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Song Skipper for Streaming Platforms",
+  "version": "1.0",
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*.netflix.com/*",
+    "*://*.primevideo.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.netflix.com/*",
+        "*://*.primevideo.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_icon": {
+    }
+  },
+  "icons": {
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["injected.js", "pageScript.js"],
+      "matches": ["*://*.netflix.com/*", "*://*.primevideo.com/*"]
+    }
+  ]
+}
